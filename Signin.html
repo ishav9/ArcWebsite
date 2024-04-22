@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Signin.css">
+</head>  
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="Home.html" >Home</a></li>
+      <li><a href="Projects.html">Portfolio</a></li>
+      <li><a href="Plans.html">BluePrints</a></li>
+      <li><a href="Signup.html" >SignUp</a></li>
+      <li><a href="Signin.html" >SignIn</a></li>
+    </ul>
+  </nav>
+      <div class="div1">
+        <h1>Welcome Back! SignIn</h1>
+      
+        <form action="/Signin" id="Signinform" method="POST">
+        
+        
+            <div class="input-container">
+              <i class="fa fa-envelope icon"></i>
+              <input class="input-field" type="email" placeholder="Email" name="email" required> </div>
+        
+            <div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input class="input-field" type="password" placeholder="Password" name="pass" id="pass" required> </div>
+            
+                
+        
+            <button type="submit" class="btn" >SignIn</button>
+            <!-- <button type="submit" class="btn" onclick="signup()">SignIn</button> -->
+            </form>
+            <h2>Doesn't have any account ? <span> <a href="Signup.html" style="color: white"> Create an Account</a></span></h2> 
+      </div>
+   <!-- <script>
+    function signup(){
+      alert("SignIn Successfully");
+      window.location.href = 'Home.html';
+    }
+  
+
+   </script>
+   -->
+</body>
+</html>

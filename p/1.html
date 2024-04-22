@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoesStore</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #4e2804;
+    }
+
+    .img-slider {
+      position: relative;
+      width: 800px;
+      height: 500px;
+      margin: 10px;
+      background: #1D212B;
+    }
+
+    .img-slider .slide {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      clip-path: circle(0% at 0 50%);
+    }
+
+    .img-slider .slide.active {
+      clip-path: circle(150% at 0 50%);
+      transition: 2s;
+      transition-property: clip-path;
+    }
+
+    .img-slider .slide img {
+      z-index: 1;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .img-slider .slide .info {
+      position: absolute;
+      top: 0;
+      padding: 15px 30px;
+    }
+
+    .img-slider .slide .info h2 {
+      color: #fff;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="img-slider">
+    <div class="slide active">
+      <img src="bg.jpg" alt="">
+      <div class="info">
+        <br><br>
+        <h2>From out store to your feet</h2>
+
+      </div>
+    </div>
+    <div class="slide">
+      <img src="bg2.png" alt="">
+      <div class="info">
+        <h2>The best shoes at the tip of your fingers.</h2>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="bg.jpg" alt="">
+      <div class="info">
+        <h2>We made shoes.</h2>
+        <h2>You spread the word.</h2>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="bg2.png" alt="">
+      <div class="info">
+        <h2>Feel the earth beneath your feet.</h2>
+
+      </div>
+    </div>
+    <div class="slide">
+      <img src="bg2.png" alt="">
+      <div class="info">
+        <h2>We make every step comfortable.</h2>
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+
+      var repeat = function(activeClass) {
+        var repeater = () => {
+          setTimeout(function() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+              currentSlide = 0;
+            }
+            slides[currentSlide].classList.add('active');
+            repeater();
+          }, 1000);
+        }
+        repeater();
+      }
+      repeat();
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Signup.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="Home.html" >Home</a></li>
+      <li><a href="Projects.html">Portfolio</a></li>
+      <li><a href="Plans.html">BluePrints</a></li>
+      <li><a href="Signup.html" >SignUp</a></li>
+      <li><a href="Signin.html" >SignIn</a></li>
+    </ul>
+  </nav>
+      <div class="div1">
+        <h1>Welcome ! Create an Account </h1>
+       <p> <b>We welcome your inquiries. Please email us and we will be happy to assist you. </b></p>
+        <form action="/Signup" id="createAccountForm" method="POST">
+        
+            <div class="input-container">
+              <i class="fa fa-user icon"></i>
+              <input class="input-field" type="text" placeholder="Username" name="uname" required> </div>
+        
+            <div class="input-container">
+              <i class="fa fa-envelope icon"></i>
+              <input class="input-field" type="email" placeholder="Email" name="email" required> </div>
+        
+            <div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input class="input-field" type="password" placeholder="Password" name="pass" id="password" required> </div>
+              <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="Confirm Password" id="confirmPassword" name="passconfirm" required> </div>
+        
+            <button type="submit" class="btn" onclick="signup">Create Account</button>
+            </form>
+      </div>
+   <!-- <script>
+    document.getElementById('createAccountForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                return;
+            }
+
+          
+            window.location.href = 'Home.html?signupSuccess=true';
+            alert("Account Created succesfully ");
+        });
+  
+
+   </script> -->
+</body>
+</html>

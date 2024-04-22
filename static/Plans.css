@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+}
+body{
+ background-image: url(bp5.jpg);
+ background-size: cover;
+ 
+  background-attachment: fixed;
+
+}
+.project{
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  font-size: large;
+  
+  object-fit: cover;
+}
+h1{
+  font-size: 50px;
+}
+p{
+  font-size: 25px;
+}
+.navbar {
+  background-color: #333;
+  padding: 2rem 0; /* Increased padding */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  gap: 3.5rem; /* Increased gap between links */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.2rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #c29525;
+}
+.bigcontainer{
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+     .imagecontainer{
+      border: 2px solid black;
+      margin: 0 auto ;
+      display: flex;
+      align-items: flex-start; /* Align items to the start of the cross axis (top) */
+     justify-content: center;
+      gap: 10px;  
+      margin-bottom: 50px;
+  }
+  .bigimage img, .first img {
+object-fit: contain;
+
+}
+  .bigimage{
+      flex: 1 1 auto; /* Don't allow the big image to grow or shrink */
+      
+      background-color: rgb(236, 235, 235);
+  }
+  .smallimage{
+      display: flex;
+      flex-direction: column;
+      gap: 5px; /* Add some space between the small images */
+  }
+  .first{
+    cursor: pointer;
+      background-color: lightgray;
+      flex: 0 0 auto; /* Don't allow the small images to grow or shrink */
+  }
+  .footer {
+    padding: 2rem;
+    background-color: #17181b;
+    color: #fff;
+    text-align: center;
+  }

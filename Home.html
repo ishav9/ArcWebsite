@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architect Website</title>
+    <link rel="stylesheet" href="Home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="Home.html" >Home</a></li>
+        <li><a href="Projects.html">Portfolio</a></li>
+        <li><a href="Plans.html">BluePrints</a></li>
+        <li><a href="Signup.html" >SignUp</a></li>
+        <li><a href="Signin.html" >SignIn</a></li>
+      </ul>
+    </nav>
+    
+
+      <header class="header" id="home">
+        <div class="img-wrapper">
+          
+        </div>
+        <div class="banner">
+          <h1><span class="highlighted"><span style="color: #c29525; font-size: 80px;">A</span>rchitecture & <br>Interior Design</span></h1>
+          <br><br>
+          
+          <p style="color: rgb(22, 21, 21);"> <b> Where Design Meets Vision </b> </p>
+         
+        </div>
+      </header>
+
+      
+
+      <section class="about-us" id="about-us">
+        <div class="section-header">
+          <h1 class="section-heading"> About Us</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="services">
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-pen-nib"></i>
+              <h3>Interior</h3>
+            </div>
+            <p class="service-text">
+              we believe exceptional design goes beyond the facade. Our interior design services transform your space into a haven of functionality and style. We excel in space planning, crafting a layout that perfectly suits your needs. Our expertise in materials and finishes ensures a beautiful aesthetic, while custom millwork and lighting design elevate both form and function. Let's create an interior that reflects your unique vision.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-paint-roller"></i>
+              <h3>Exterior</h3>
+            </div>
+            <p class="service-text">
+              Architects don't stop at the doorway. We craft exteriors that make a statement.  From designing a captivating facade that enhances curb appeal to seamlessly integrating your home with the landscape, we prioritize both beauty and functionality. Sustainability is key, so we create energy-efficient exteriors that respect the environment.  Let's extend your living space and connect you with the outdoors through stunning outdoor living areas. We'll design an exterior that reflects your style and complements your dream home.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-pencil-alt"></i>
+              <h3>Design</h3>
+            </div>
+            <p class="service-text">
+              Design is both the blueprint and the act of creation. It's the guiding idea behind anything we build or experience, considering function, beauty, and how we interact with it. Designers translate these concepts into reality through a process of brainstorming, sketching, and refinement.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-paint-brush"></i>
+              <h3>Decoration</h3>
+            </div>
+            <p class="service-text">
+              Elevate your space with our decorative expertise! We collaborate on a theme, select stunning materials, and design custom millwork for a cohesive look. From handcrafted details to choosing impactful art, we guide you in creating a space that reflects your taste. Let's transform your vision into a reality!
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-ruler-combined"></i>
+              <h3>Planning</h3>
+            </div>
+            <p class="service-text">
+              Meticulous planning is the bedrock of exceptional design. We start by understanding your needs and vision. Then, we craft a space plan that maximizes flow and function. Budget, timeline, and permits? We handle those too, keeping you informed throughout the process. Let's build your dream on a solid foundation - together.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="far fa-building"></i>
+              <h3>Execution</h3>
+            </div>
+            <p class="service-text">
+              We don't just design, we build. Our project management keeps things running smoothly, on time, and on budget. We prioritize quality control and keep you informed with regular on-site presence.  Adaptable to changes, we minimize disruptions while achieving your vision. Let's turn your architectural dreams into a stunning reality.
+            </p>
+          </div>
+          
+        </div>
+        <div class="about-us-img-wrapper">
+          <img src="house.png" />
+        </div>
+      </section>  
+
+     
+
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2024, IshaVerma - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="#" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="#"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+
+      <a href="#" class="scroll-btn">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+     
+    </div>
+   
+      
+      <script>
+         function colorChange(){
+        let btn = document.getElementById("button");
+        btn.style.backgroundColor = "White";
+  }
+        const urlParams = new URLSearchParams(window.location.search);
+        const signupSuccess = urlParams.get('signupSuccess');
+
+        if (signupSuccess === 'true') {
+            const successMessage = document.createElement('p');
+            successMessage.innerText = 'Account created successfully!';
+            document.body.appendChild(successMessage);
+        }
+    </script>
+   
+
+  </body>
+</html>

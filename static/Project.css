@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 2rem 0; /* Increased padding */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    gap: 3.5rem; /* Increased gap between links */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.2rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #c29525;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    width: 50%; /* Set width to half of the page */
+    position: relative;
+    overflow: hidden; /* Ensure images don't overflow */
+    
+  }
+  
+  .slideshow-container img {
+    height: 500px;
+    width: 100%;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  /* Text container */
+  .text-container {
+    width: 50%; /* Set width to half of the page */
+    padding: 1rem; /* Add padding for better readability */
+    margin-top: 150px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .container2 {
+    display: flex; /* Enable flexbox layout */
+    border: 2px solid black;
+    margin: 40px 40px; 
+  }
+
+  .text {
+    width: 80%; /* Occupy 80% of container width */
+    padding: 1rem; /* Add some padding for readability */
+  }
+
+
+
+
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box {
+    width: 33%; /* Adjust the width according to your needs */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.3s ease-in-out;  /* Add transition for smooth hover effect */
+}
+
+.box img {
+    width: 100%;
+    height: 80%;
+}
+
+.box p {
+    margin: 10px 0;
+}
+
+.box:hover {
+    background-color: #cec1a2;  /* Add a subtle background color on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Add a slight shadow on hover */
+}

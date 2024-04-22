@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<link rel="stylesheet" href="Project.css">
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="Home.html" >Home</a></li>
+      <li><a href="Projects.html">Portfolio</a></li>
+      <li><a href="Plans.html">BluePrints</a></li>
+      <li><a href="Signup.html" >SignUp</a></li>
+      <li><a href="Signin.html" >SignIn</a></li>
+    </ul>
+  </nav>
+
+    </div>
+    <div class="container">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 7</div>
+          <img src="p5.jpg">
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 7</div>
+          <img src="p1.jpg" >
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 7</div>
+          <img src="p2.jpg" >
+          
+        </div>
+      
+        
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 7</div>
+          <img src="p3.jpg" >
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 7</div>
+          <img src="p6.jpg" >
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 7</div>
+          <img src="p4.jpg" >
+          
+        </div>
+       
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 7</div>
+          <img src="p7.jpg" >
+          
+        </div>
+      </div>
+      <div class="text-container">
+        <h2> <span style="color: #c29525;">A</span>rc & <span style="color: #c29525;">A</span>ssociates</h2>
+        <p>Your Project Journey Starts Here: Explore Our Portfolio</p>
+      </div>
+      <br>
+    </div>
+    <div class="container2">
+      <div class="box">
+          <img src="p5.jpg" alt="Image 1">
+          <p style="font-size: 15px;"> In the heart of Jalandar, Punjab, lies your dream venue - a marriage palace designed to create lasting memories. </p>
+      </div>
+      <div class="box">
+          <img src="p1.jpg" alt="Image 2">
+          <p style="font-size: 15px;">
+            In Ludhiana, Punjab, this modern residence offers a thoughtfully designed layout for seamless living and a striking exterior for an impactful street presence.</p>
+      </div>
+      <div class="box">
+          <img src="p2.jpg" alt="Image 3">
+          <p style="font-size: 15px;">In Jalandar, Punjab, celebrate your grand union in unparalleled style - a meticulously crafted marriage palace designed to host weddings of grandeur and grace.</p>
+      </div>
+      <div class="box">
+        <img src="p3.jpg" alt="Image 1">
+        <p style="font-size: 15px;">Ludhiana's Alpinewood School: Modern design meets nature for a stimulating learning experience.</p>
+    </div>
+    <div class="box">
+      <img src="p6.jpg" alt="Image 1">
+      <p style="font-size: 15px;">In Ludhiana, Punjab, find serenity amidst contemporary design - a Jain temple fostering spiritual connection through light-filled spaces and intricate details.</p>
+  </div>
+  <div class="box">
+    <img src="p4.jpg" alt="Image 1">
+    <p style=" font-size: 15px;">Abohar's rising star: This school's design fosters learning with light-filled spaces, innovative learning areas, and a secure environment that inspires exploration.</p>
+</div>
+   
+  </div>
+    
+      <script>
+//        let slideIndex = 0;
+//  showSlides();
+
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}
+//   slides[slideIndex-1].style.display = "block";
+//   setTimeout(showSlides, 3000); 
+// }
+    $(document).ready(function() {
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        $('.mySlides').hide();
+        slideIndex++;
+        if (slideIndex > $('.mySlides').length) 
+          {slideIndex = 1}
+        $('.mySlides').eq(slideIndex-1).show();
+        setTimeout(showSlides, 3000); 
+      }
+    });
+
+      </script>
+</body>
+</html>
