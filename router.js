@@ -9,10 +9,10 @@ router.get("/",(req,res)=>{
    res.sendFile(path.join(__dirname,'Home.html'));
 })
 router.get("/Projects.html",(req,res)=>{
-    res.sendFile(path.join(__dirname,'projects.html'));
+    res.sendFile(path.join(__dirname,'Projects.html'));
 });
-router.get("/plans.html",(req,res)=>{
-    res.sendFile(path.join(__dirname,'plans.html'));
+router.get("/Plans.html",(req,res)=>{
+    res.sendFile(path.join(__dirname,'Plans.html'));
 });
 router.get("/Signin.html",(req,res)=>{
     res.sendFile(path.join(__dirname,'Signin.html'));
